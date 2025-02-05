@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigonometric Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trigonometric Calculator</h1>
+
+        <!-- Angle Unit Selection -->
+        <div class="unit-selection">
+            <label for="unit">Select Angle Unit:</label>
+            <select id="unit">
+                <option value="degrees">Degrees</option>
+                <option value="radians">Radians</option>
+            </select>
+        </div>
+
+        <!-- Grid Layout for Function Blocks -->
+        <div class="grid-container">
+            <!-- Sine Block -->
+            <div class="function-block">
+                <h2>Sine (sin)</h2>
+                <form id="sinForm">
+                    <label for="sinAngle">Enter an angle:</label>
+                    <input type="number" id="sinAngle" name="sinAngle" required>
+                    <button type="submit">Calculate</button>
+                </form>
+                <p>Result: <span id="sinResult"></span></p>
+            </div>
+
+            <!-- Cosine Block -->
+            <div class="function-block">
+                <h2>Cosine (cos)</h2>
+                <form id="cosForm">
+                    <label for="cosAngle">Enter an angle:</label>
+                    <input type="number" id="cosAngle" name="cosAngle" required>
+                    <button type="submit">Calculate</button>
+                </form>
+                <p>Result: <span id="cosResult"></span></p>
+            </div>
+
+            <!-- Tangent Block -->
+            <div class="function-block">
+                <h2>Tangent (tan)</h2>
+                <form id="tanForm">
+                    <label for="tanAngle">Enter an angle:</label>
+                    <input type="number" id="tanAngle" name="tanAngle" required>
+                    <button type="submit">Calculate</button>
+                </form>
+                <p>Result: <span id="tanResult"></span></p>
+            </div>
+
+            <!-- Cosecant Block -->
+            <div class="function-block">
+                <h2>Cosecant (csc)</h2>
+                <form id="cscForm">
+                    <label for="cscAngle">Enter an angle:</label>
+                    <input type="number" id="cscAngle" name="cscAngle" required>
+                    <button type="submit">Calculate</button>
+                </form>
+                <p>Result: <span id="cscResult"></span></p>
+            </div>
+
+            <!-- Secant Block -->
+            <div class="function-block">
+                <h2>Secant (sec)</h2>
+                <form id="secForm">
+                    <label for="secAngle">Enter an angle:</label>
+                    <input type="number" id="secAngle" name="secAngle" required>
+                    <button type="submit">Calculate</button>
+                </form>
+                <p>Result: <span id="secResult"></span></p>
+            </div>
+
+            <!-- Cotangent Block -->
+            <div class="function-block">
+                <h2>Cotangent (cot)</h2>
+                <form id="cotForm">
+                    <label for="cotAngle">Enter an angle:</label>
+                    <input type="number" id="cotAngle" name="cotAngle" required>
+                    <button type="submit">Calculate</button>
+                </form>
+                <p>Result: <span id="cotResult"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
